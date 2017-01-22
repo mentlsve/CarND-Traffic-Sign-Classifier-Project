@@ -16,7 +16,7 @@ This project requires **Python 3.5** and the following Python libraries installe
 - [Matplotlib](http://matplotlib.org/)
 - [Pandas](http://pandas.pydata.org/) (Optional)
 
-### Installing/Starting
+### Installing/Starting on local workstation
 
 Switch to the directory after CarND-Traffic-Sign-Classifier-Project after cloning and install the environment:
 
@@ -30,13 +30,18 @@ Activate the enviroment
 
 - `source activate CarND-Traffic-Sign-Classifier-Project`
 
+### Running on AWS GPU Instance
+
+* Start the instance in the [AWS console](https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Instances:sort=instanceId) (Actions -> Instance State -> Start)
+* Write down the public IP
+* Open a terminal on the local workstation and ssh into the instance: `> ssh carnd@<public IP>`
+* Password is `carnd`
+* `cd CarND-Traffic-Sign-Classifier-Project/`
+* `source activate CarND-Traffic-Sign-Classifier-Project`
+* `jupyter notebook`
+* Open `http://<public IP>:8888/` in a browser on the local workstation
+
+
 ### Dataset
 
-1. [Download the dataset](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581faac4_traffic-signs-data/traffic-signs-data.zip). This is a pickled dataset in which we've already resized the images to 32x32.
-2. Clone the project and start the notebook.
-```
-git clone https://github.com/udacity/CarND-Traffic-Signs
-cd CarND-Traffic-Signs
-jupyter notebook Traffic_Signs_Recognition.ipynb
-```
-3. Follow the instructions in the `Traffic_Signs_Recognition.ipynb` notebook.
+* [Download the dataset](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581faac4_traffic-signs-data/traffic-signs-data.zip). This is a pickled dataset in which we've already resized the images to 32x32.

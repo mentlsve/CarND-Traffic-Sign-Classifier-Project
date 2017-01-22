@@ -16,9 +16,19 @@ This project requires **Python 3.5** and the following Python libraries installe
 - [Matplotlib](http://matplotlib.org/)
 - [Pandas](http://pandas.pydata.org/) (Optional)
 
+### Installing/Starting
+
+Switch to the directory after CarND-Traffic-Sign-Classifier-Project after cloning and install the environment:
+
+- `conda env create -f environment.yml`
+
 Run this command at the terminal prompt to install [OpenCV](http://opencv.org/). Useful for image processing:
 
 - `conda install -c https://conda.anaconda.org/menpo opencv3`
+
+Activate the enviroment
+
+- `source activate CarND-Traffic-Sign-Classifier-Project`
 
 ### Dataset
 
@@ -30,4 +40,3 @@ cd CarND-Traffic-Signs
 jupyter notebook Traffic_Signs_Recognition.ipynb
 ```
 3. Follow the instructions in the `Traffic_Signs_Recognition.ipynb` notebook.
-
